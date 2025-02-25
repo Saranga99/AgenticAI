@@ -17,13 +17,13 @@ from browser_use import Agent
 
 llm = ChatOpenAI(model='gpt-4o')
 agent = Agent(
-	task='Go to https://www.patagonia.com/shop/mens, and scrape all products details for mens and return a json file.',
+	task='Go to https://online.uom.lk/my/ and login usename:258248E and password is Saranga@1234,	and go inside advanced databased module and do the this quiz "PopQuiz_4.2 (From Lect 4)"',
 	llm=llm,
 )
 
 
 async def main():
-	await agent.run(max_steps=3)
+	await agent.run(max_steps=5)
 	agent.create_history_gif()
 
 
